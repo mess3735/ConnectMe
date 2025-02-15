@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Contacts">
+
+    <!-- Top Bar with Profile Name and Edit Icon -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/editProfile"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/backbtn"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="OliviaD"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_edit"/>
+    </LinearLayout>
+
+    <!-- Contacts Header -->
+    <TextView
+        android:id="@+id/contactsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contacts"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#473635"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/editProfile"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search for friends"
+        android:padding="12dp"
+        android:drawableRight="@drawable/search"
+        android:background="@drawable/edittext_background"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/contactsHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- In Contacts Section -->
+    <TextView
+        android:id="@+id/inContactsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In Contacts"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#473635"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/searchBar"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Contacts List -->
+    <LinearLayout
+        android:id="@+id/contactsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/inContactsHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Example Contact Item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/userimg"
+                android:layout_marginEnd="12dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Henry School"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_chat"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Invite New Friends Section -->
+    <TextView
+        android:id="@+id/inviteHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invite New Friends"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#473635"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/contactsList"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Invite Friends List -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/inviteHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Example Invite Friend Item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/userimg"
+                android:layout_marginEnd="12dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Amy Wesley"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"/>
+
+            <Button
+                android:id="@+id/inviteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invite"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#473635"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/home"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/search"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/addbtn"
+            android:background="@drawable/add_circle"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/profile"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/contacts"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
