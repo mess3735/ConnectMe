@@ -13,14 +13,34 @@
         android:theme="@style/Theme.I221194"
         tools:targetApi="31">
         <activity
-            android:name=".Login"
+            android:name=".Contacts"
             android:exported="false" />
         <activity
-            android:name=".ui.login.LoginPage"
-            android:exported="false"
-            android:label="@string/title_activity_login_page" />
+            android:name=".StoryShare"
+            android:exported="false" />
         <activity
-            android:name=".MainPage"
+            android:name=".PostShare"
+            android:exported="false" />
+        <activity
+            android:name=".VideoCall"
+            android:exported="false" />
+        <activity
+            android:name=".VoiceCall"
+            android:exported="false" />
+        <activity
+            android:name=".HomeFeed"
+            android:exported="false" />
+        <activity
+            android:name=".ChatScreenWhite"
+            android:exported="false" />
+        <activity
+            android:name=".SearchPage"
+            android:exported="false" />
+        <activity
+            android:name=".CharScreen"
+            android:exported="false" />
+        <activity
+            android:name=".EditPage"
             android:exported="false" />
         <activity
             android:name=".RegisterPage"
