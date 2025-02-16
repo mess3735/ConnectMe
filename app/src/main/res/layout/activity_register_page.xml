@@ -9,7 +9,7 @@
     tools:context=".RegisterPage">
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="200dp"
         android:scaleType="fitCenter"
@@ -26,13 +26,13 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/imageView1"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp" />
 
     <TextView
-        android:id="@+id/subText1"
+        android:id="@+id/subText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="We're happy to see you. Please login to continue"
@@ -44,7 +44,7 @@
         android:layout_marginStart="16dp" />
 
     <EditText
-        android:id="@+id/name1"
+        android:id="@+id/names"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Name"
@@ -52,14 +52,14 @@
         android:minHeight="48dp"
         android:padding="10dp"
         android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@id/subText1"
+        app:layout_constraintTop_toBottomOf="@id/subText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"/>
 
     <EditText
-        android:id="@+id/username1"
+        android:id="@+id/usernames"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Username"
@@ -67,14 +67,14 @@
         android:minHeight="48dp"
         android:padding="10dp"
         android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@id/name1"
+        app:layout_constraintTop_toBottomOf="@id/names"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="4dp"/>
 
     <EditText
-        android:id="@+id/phone1"
+        android:id="@+id/phones"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Phone Number"
@@ -83,14 +83,14 @@
         android:minHeight="48dp"
         android:padding="10dp"
         android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@id/username1"
+        app:layout_constraintTop_toBottomOf="@id/usernames"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="4dp"/>
 
     <EditText
-        android:id="@+id/email1"
+        android:id="@+id/emails"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Email"
@@ -99,14 +99,14 @@
         android:minHeight="48dp"
         android:padding="10dp"
         android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@id/phone1"
+        app:layout_constraintTop_toBottomOf="@id/phones"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="4dp"/>
 
     <EditText
-        android:id="@+id/password1"
+        android:id="@+id/passwords"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Password"
@@ -115,7 +115,7 @@
         android:minHeight="48dp"
         android:padding="10dp"
         android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@id/email1"
+        app:layout_constraintTop_toBottomOf="@id/emails"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="16dp"
@@ -123,19 +123,19 @@
 
     <!-- Terms of Service and Privacy Policy -->
     <TextView
-        android:id="@+id/termsText"
+        android:id="@+id/termsTexts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="By clicking Agree and continue below, I agree to "
         android:textSize="14sp"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/password1"
+        app:layout_constraintTop_toBottomOf="@id/passwords"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"/>
 
     <TextView
-        android:id="@+id/termsLinks"
+        android:id="@+id/termsLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Terms of Service"
@@ -145,25 +145,25 @@
         android:clickable="true"
         android:focusable="true"
         android:autoLink="web"
-        app:layout_constraintTop_toBottomOf="@id/termsText"
+        app:layout_constraintTop_toBottomOf="@id/termsTexts"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"/>
 
     <TextView
-        android:id="@+id/and"
+        android:id="@+id/ands"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="and"
         android:textSize="14sp"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/termsText"
-        app:layout_constraintStart_toEndOf="@id/termsLinks"
+        app:layout_constraintTop_toBottomOf="@id/termsTexts"
+        app:layout_constraintStart_toEndOf="@id/termsLink"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"/>
 
     <TextView
-        android:id="@+id/privacyLinks"
+        android:id="@+id/privacyLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Privacy Policy"
@@ -173,19 +173,19 @@
         android:clickable="true"
         android:focusable="true"
         android:autoLink="web"
-        app:layout_constraintTop_toBottomOf="@id/termsText"
-        app:layout_constraintStart_toEndOf="@id/and"
+        app:layout_constraintTop_toBottomOf="@id/termsTexts"
+        app:layout_constraintStart_toEndOf="@id/ands"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"/>
 
     <Button
-        android:id="@+id/registerBtn"
+        android:id="@+id/registerBtns"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Register"
         android:textColor="@color/white"
         android:backgroundTint="#6F2604"
-        app:layout_constraintTop_toBottomOf="@id/termsLinks"
+        app:layout_constraintTop_toBottomOf="@id/termsLink"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="16dp"
@@ -193,20 +193,20 @@
 
     <!-- Already have an account? Login -->
     <TextView
-        android:id="@+id/loginText"
+        android:id="@+id/loginTexts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Already have an account? "
         android:textSize="14sp"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/registerBtn"
+        app:layout_constraintTop_toBottomOf="@id/registerBtns"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"/>
 
     <TextView
-        android:id="@+id/loginButton"
+        android:id="@+id/loginButtons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
@@ -215,8 +215,8 @@
         android:textStyle="bold"
         android:clickable="true"
         android:focusable="true"
-        app:layout_constraintTop_toBottomOf="@id/registerBtn"
-        app:layout_constraintStart_toEndOf="@id/loginText"
+        app:layout_constraintTop_toBottomOf="@id/registerBtns"
+        app:layout_constraintStart_toEndOf="@id/loginTexts"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"/>
 

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".EditPage">
+
+    <!-- Edit Panel (Top Bar) -->
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit Profile"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/doneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Done"
+            android:textColor="#6F2604"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Profile Picture Centered -->
+    <ImageButton
+        android:id="@+id/image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:background="@drawable/userimg"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/myText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Messam Raza"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/namesText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#6F2604"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/names"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:textColor="@color/white"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Username -->
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#6F2604"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/usernames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your username"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Contact -->
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Number"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#6F2604"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your phone number"
+        android:inputType="phone"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="4dp"/>
+    <TextView
+        android:id="@+id/bios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bio"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#6F2604"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Just an average"
+        android:padding="10dp"
+        android:textSize="14sp" />
+
+</LinearLayout>

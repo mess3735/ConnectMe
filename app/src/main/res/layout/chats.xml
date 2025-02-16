@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Received Message (Left Side) -->
+    <LinearLayout
+        android:id="@+id/receivedLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="start">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:elevation="5dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="#E0E0E0">  <!-- Light Grey Background -->
+
+            <TextView
+                android:id="@+id/receivedMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello! How are you?"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/receivedTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:30 AM"
+            android:textSize="12sp"
+            android:textColor="#757575"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="start"/>
+    </LinearLayout>
+
+    <!-- Sent Message (Right Side) -->
+    <LinearLayout
+        android:id="@+id/sentLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="end">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:elevation="5dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="#0084FF">  <!-- Blue Background -->
+
+            <TextView
+                android:id="@+id/sentMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I'm good! What about you?"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/sentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:31 AM"
+            android:textSize="12sp"
+            android:textColor="#0084FF"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+</LinearLayout>
