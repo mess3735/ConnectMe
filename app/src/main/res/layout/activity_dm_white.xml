@@ -6,10 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ChatScreenWhite">
+    tools:context=".DM_White">
 
-
-    <!-- Back Button and User Name -->
     <LinearLayout
         android:id="@+id/topBar"
         android:layout_width="match_parent"
@@ -60,7 +58,6 @@
         app:layout_constraintTop_toBottomOf="@id/userProfileImage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
     <!-- RecyclerView for Messages -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/chatRecyclerView"
@@ -88,7 +85,7 @@
             android:id="@+id/messageInput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+            android:layout_margin="20dp"
             android:layout_weight="1"
             android:hint="Typing...."
             android:textColor="@color/white"
@@ -99,11 +96,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/send_button"
-            android:layout_marginBottom="20dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="10dp"
+            android:layout_margin="20dp"
             android:backgroundTint="@color/white"/>
     </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
