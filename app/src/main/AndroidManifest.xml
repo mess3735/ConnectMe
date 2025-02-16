@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <!-- Camera Permissions -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- Ensure camera functionality -->
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.front" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +17,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.I221194"
         tools:targetApi="31">
+        <activity
+            android:name=".HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".DMs"
+            android:exported="false" />
+        <activity
+            android:name=".Following_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Followers_Page"
+            android:exported="false" />
         <activity
             android:name=".Contacts"
             android:exported="false" />
@@ -26,9 +43,6 @@
             android:exported="false" />
         <activity
             android:name=".VoiceCall"
-            android:exported="false" />
-        <activity
-            android:name=".HomeFeed"
             android:exported="false" />
         <activity
             android:name=".ChatScreenWhite"

@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
         var loginBtn = findViewById<Button>(R.id.login)
         loginBtn.setOnClickListener {
-            val intent = Intent(this, EditPage::class.java)
+            val intent = Intent(this, HomePage::class.java)
             startActivity(intent)
         }
     }
