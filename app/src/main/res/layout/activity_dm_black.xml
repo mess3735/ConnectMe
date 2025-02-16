@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Chat Screen Page -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#242323"
-    tools:context=".CharScreen">
+    tools:context=".DM_Black">
 
     <!-- Back Button and User Name -->
     <LinearLayout
@@ -24,6 +24,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/backbtn"
+            android:clickable="true"
             app:tint="@color/white" />
 
         <TextView
@@ -36,7 +37,6 @@
             android:textStyle="bold"
             android:layout_marginStart="16dp" />
     </LinearLayout>
-
     <!-- User Profile Image -->
     <ImageView
         android:id="@+id/userProfileImage"
@@ -59,7 +59,6 @@
         app:layout_constraintTop_toBottomOf="@id/userProfileImage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
     <!-- RecyclerView for Messages -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/chatRecyclerView"
@@ -70,18 +69,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/viewProfileButton" />
-
-    <!-- Typing Indicator -->
-<!--    <TextView-->
-<!--        android:id="@+id/typingIndicator"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Typing..."-->
-<!--        android:textColor="@color/white"-->
-<!--        android:layout_marginBottom="10dp"-->
-<!--        app:layout_constraintBottom_toTopOf="@id/messageInputLayout"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent" />-->
 
     <!-- Message Input Box -->
     <LinearLayout
@@ -115,5 +102,6 @@
             android:layout_marginEnd="10dp"
             android:backgroundTint="@color/white"/>
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
