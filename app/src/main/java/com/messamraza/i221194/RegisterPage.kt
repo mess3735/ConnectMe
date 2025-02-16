@@ -22,7 +22,7 @@ class RegisterPage : AppCompatActivity() {
         }
         var registerBtn = findViewById<Button>(R.id.registerBtns)
         registerBtn.setOnClickListener {
-            val intent = Intent(this, VoiceCall::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
         var loginBtn = findViewById<TextView>(R.id.loginButtons)

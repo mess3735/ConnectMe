@@ -54,6 +54,7 @@
         android:orientation="horizontal"
         android:gravity="center"
         android:padding="8dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="@color/white">
 
@@ -61,18 +62,24 @@
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
+            android:id="@+id/home"
+            android:clickable="true"
             android:src="@drawable/home" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
+            android:id="@+id/searchbtn"
+            android:clickable="true"
             android:src="@drawable/search"/>
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:src="@drawable/addbtn"
+            android:id="@+id/addPost"
+            android:clickable="true"
             android:background="@drawable/add_circle"
             android:layout_margin="8dp"/>
 
@@ -80,12 +87,16 @@
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
+            android:id="@+id/profile"
+            android:clickable="true"
             android:src="@drawable/profile"/>
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
+            android:id="@+id/contact"
+            android:clickable="true"
             android:src="@drawable/contacts"/>
     </LinearLayout>
 
