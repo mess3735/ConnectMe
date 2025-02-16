@@ -2,34 +2,35 @@ package com.messamraza.i221194
 
 import android.content.Intent
 import android.os.Bundle
+import android.provider.ContactsContract
 import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class RegisterPage : AppCompatActivity() {
+class DM_White : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_register_page)
+        setContentView(R.layout.activity_dm_white)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var registerBtn = findViewById<Button>(R.id.registerBtns)
-        registerBtn.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+        var backBtn = findViewById<ImageView>(R.id.backButton)
+        backBtn.setOnClickListener {
+            var intent = Intent(this, DMs::class.java)
             startActivity(intent)
+            finish()
         }
-        var loginBtn = findViewById<TextView>(R.id.loginButtons)
-        loginBtn.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+        var veiwProfile = findViewById<Button>(R.id.viewProfileButton)
+        veiwProfile.setOnClickListener {
+            var intent = Intent(this, ContactsContract.Profile::class.java)
             startActivity(intent)
+            finish()
         }
-
     }
 }

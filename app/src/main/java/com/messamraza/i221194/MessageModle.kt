@@ -19,7 +19,6 @@ data class MessageModle(
         parcel.writeByte(if (isSent) 1 else 0)
         parcel.writeString(timestamp)
     }
-
     override fun describeContents(): Int = 0
 
     companion object CREATOR : Parcelable.Creator<MessageModle> {

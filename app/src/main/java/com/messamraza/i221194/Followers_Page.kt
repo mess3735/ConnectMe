@@ -19,14 +19,14 @@ class Followers_Page : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var back = findViewById<ImageView>(R.id.back)
-        back.setOnClickListener {
-            finish()
-        }
         var followers = findViewById<Button>(R.id.Following)
         followers.setOnClickListener {
             var intent = Intent(this, Following_Page::class.java)
             startActivity(intent)
+            finish()
+        }
+        var back = findViewById<ImageView>(R.id.back)
+        back.setOnClickListener {
             finish()
         }
     }

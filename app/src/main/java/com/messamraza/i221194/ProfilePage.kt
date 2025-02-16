@@ -1,38 +1,30 @@
 package com.messamraza.i221194
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.ImageView
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class Contacts : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
+class ProfilePage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_contacts)
+        setContentView(R.layout.activity_profile_page)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var back = findViewById<ImageView>(R.id.back)
-        back.setOnClickListener {
-            finish()
-        }
-        var edit = findViewById<ImageButton>(R.id.edit)
-        edit.setOnClickListener {
-            var intent = Intent(this, EditPage::class.java)
+        var editButton = findViewById<ImageButton>(R.id.doneButton)
+        editButton.setOnClickListener {
+            val intent = Intent(this, EditPage::class.java)
             startActivity(intent)
-            finish()
         }
+
         var search = findViewById<ImageView>(R.id.searchbtn)
         search.setOnClickListener {
             var intent = Intent(this, SearchPage::class.java)
@@ -47,21 +39,22 @@ class Contacts : AppCompatActivity() {
         }
         var profile = findViewById<ImageView>(R.id.profile)
         profile.setOnClickListener {
-            var intent = Intent(this, EditPage::class.java)
+            var intent = Intent(this, ProfilePage::class.java)
             startActivity(intent)
             finish()
         }
         var contact = findViewById<ImageView>(R.id.contact)
         contact.setOnClickListener {
-            var intent = Intent(this, Contacts::class.java)
+            var intent = Intent(this, MyContacts::class.java)
             startActivity(intent)
             finish()
         }
         var addPost = findViewById<ImageView>(R.id.addPost)
         addPost.setOnClickListener {
-            var intent = Intent(this, PostShare::class.java)
+            var intent = Intent(this, PostPicture::class.java)
             startActivity(intent)
             finish()
         }
+
     }
 }

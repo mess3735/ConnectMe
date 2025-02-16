@@ -21,6 +21,5 @@ class VoiceCall : AppCompatActivity() {
         endCall.setOnClickListener {
             finish()
         }
-
     }
 }

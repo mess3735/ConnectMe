@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
     <!-- Camera Permissions -->
     <uses-permission android:name="android.permission.CAMERA" /> <!-- Ensure camera functionality -->
     <uses-feature android:name="android.hardware.camera.any" />
@@ -16,52 +16,73 @@
         android:roundIcon="@mipmap/bigback"
         android:supportsRtl="true"
         android:theme="@style/Theme.I221194"
-        tools:targetApi="31">
+        tools:targetApi="31" >
+        <activity
+            android:name=".PostStory"
+            android:exported="false" />
+        <activity
+            android:name=".SharePost"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePage"
+            android:exported="false" />
+        <activity
+            android:name=".DM_Black"
+            android:exported="false" />
+        <activity
+            android:name=".DM_White"
+            android:exported="false" />
+        <activity
+            android:name=".MyContacts"
+            android:exported="false" />
+        <activity
+            android:name=".PostPicture"
+            android:exported="false" />
         <activity
             android:name=".HomePage"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".DMs"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Following_Page"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Followers_Page"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Contacts"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".StoryShare"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".PostShare"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".VideoCall"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".VoiceCall"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ChatScreenWhite"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".SearchPage"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".CharScreen"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EditPage"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".RegisterPage"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity2"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

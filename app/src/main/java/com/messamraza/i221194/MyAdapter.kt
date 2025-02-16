@@ -18,7 +18,6 @@ class MyAdapter(var list: MutableList<Modle>) : RecyclerView.Adapter<MyAdapter.M
         return MyViewHandler(
             LayoutInflater.from(parent.context).inflate(R.layout.row, parent, false)
         )
-
     }
 
     override fun getItemCount(): Int {

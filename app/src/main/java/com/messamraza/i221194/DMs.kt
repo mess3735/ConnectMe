@@ -26,17 +26,16 @@ class DMs : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-
         var dms = findViewById<Button>(R.id.DMS)
         dms.setOnClickListener {
-            var intent = Intent(this, DMs::class.java)
+            var intent = Intent(this, DM_White::class.java)
             startActivity(intent)
             finish()
         }
 
         var requests = findViewById<Button>(R.id.requests)
         requests.setOnClickListener {
-            var intent = Intent(this, DMs::class.java)
+            var intent = Intent(this, DM_Black::class.java)
             startActivity(intent)
             finish()
         }

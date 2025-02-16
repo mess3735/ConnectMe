@@ -11,6 +11,4 @@
     <!-- Stroke (border) -->
     <stroke android:width="2dp" android:color="#4E3F39" />
 
-    <!-- Padding inside the EditText -->
-    <padding android:left="12dp" android:right="12dp" />
 </shape>

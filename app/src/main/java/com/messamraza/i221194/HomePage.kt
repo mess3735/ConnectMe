@@ -35,19 +35,19 @@ class HomePage : AppCompatActivity() {
         }
         var profile = findViewById<ImageView>(R.id.profile)
         profile.setOnClickListener {
-            var intent = Intent(this, EditPage::class.java)
+            var intent = Intent(this, ProfilePage::class.java)
             startActivity(intent)
             finish()
         }
         var contact = findViewById<ImageView>(R.id.contact)
         contact.setOnClickListener {
-            var intent = Intent(this, Contacts::class.java)
+            var intent = Intent(this, MyContacts::class.java)
             startActivity(intent)
             finish()
         }
         var addPost = findViewById<ImageView>(R.id.addPost)
         addPost.setOnClickListener {
-            var intent = Intent(this, PostShare::class.java)
+            var intent = Intent(this, SharePost::class.java)
             startActivity(intent)
             finish()
         }

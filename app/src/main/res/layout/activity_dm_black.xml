@@ -21,8 +21,8 @@
 
         <ImageView
             android:id="@+id/backButton"
-            android:layout_width="24dp"
             android:layout_height="24dp"
+            android:layout_width="24dp"
             android:src="@drawable/backbtn"
             android:clickable="true"
             app:tint="@color/white" />

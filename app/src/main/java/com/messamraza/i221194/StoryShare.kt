@@ -28,7 +28,6 @@ class StoryShare : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         val cameraPreview = findViewById<PreviewView>(R.id.cameraPreview)
 
         // Request Camera Permission

@@ -26,7 +26,8 @@ class MessageAdapter(private var list: MutableList<MessageModle>) :
             holder.sentTime.visibility = View.VISIBLE
             holder.receivedMessage.visibility = View.GONE
             holder.receivedTime.visibility = View.GONE
-        } else {
+        }
+        else {
             holder.receivedMessage.text = message.messageText
             holder.receivedTime.text = message.timestamp
             holder.receivedMessage.visibility = View.VISIBLE

@@ -20,7 +20,7 @@ class EditPage : AppCompatActivity() {
         }
         var registerBtn = findViewById<Button>(R.id.doneButton)
         registerBtn.setOnClickListener {
-            val intent = Intent(this, HomePage::class.java)
+            val intent = Intent(this, ProfilePage::class.java)
             startActivity(intent)
         }
     }
