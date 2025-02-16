@@ -28,8 +28,8 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp" />
 
@@ -131,7 +131,7 @@
         android:layout_marginTop="8dp">
 
         <ImageButton
-            android:id="@+id/google"
+            android:id="@+id/googlebtn"
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:background="@drawable/google"
@@ -140,7 +140,7 @@
             android:layout_marginEnd="16dp" />
 
         <ImageButton
-            android:id="@+id/apple"
+            android:id="@+id/applebtn"
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:background="@drawable/apple"
@@ -149,7 +149,7 @@
             android:layout_marginEnd="16dp" />
 
         <ImageButton
-            android:id="@+id/facebook"
+            android:id="@+id/facebookbtn"
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:background="@drawable/facebook"

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".VoiceCall">
+
+    <!-- Top Panel -->
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Henry Benjamin"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <!-- Call Time Display Below Name -->
+        <TextView
+            android:id="@+id/callTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:35"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <!-- Profile Picture Right Cornered Above Bottom Panel -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <ImageButton
+            android:id="@+id/image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="end|bottom"
+            android:background="@drawable/userimg"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="20dp" />
+    </FrameLayout>
+
+    <!-- Bottom Panel with Call Controls -->
+    <LinearLayout
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/message_input_white_bg"
+        android:gravity="center"
+        android:paddingHorizontal="20dp">
+
+        <ImageButton
+            android:id="@+id/dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#A15C4338"
+            android:padding="10dp"
+            android:background="@drawable/circled"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/dots" />
+
+        <ImageButton
+            android:id="@+id/vidcall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#A15C4338"
+            android:padding="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/circled"
+            android:src="@drawable/vidcall" />
+
+        <ImageButton
+            android:id="@+id/speaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#A15C4338"
+            android:padding="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/circled"
+            android:src="@drawable/speaker_push" />
+
+        <ImageButton
+            android:id="@+id/mutemic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#A15C4338"
+            android:padding="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/circled"
+            android:src="@drawable/mic" />
+
+        <ImageButton
+            android:id="@+id/endcall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/endcall"
+            android:backgroundTint="#CE0E0E"
+            android:background="@drawable/circled"
+            android:padding="10dp" />
+    </LinearLayout>
+</LinearLayout>

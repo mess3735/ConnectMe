@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:backgroundTint="@color/white"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".PostStory">
+
+  <!-- Top Bar -->
+  <LinearLayout
+      android:id="@+id/topBar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:padding="16dp"
+      android:gravity="center_vertical"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent">
+
+    <ImageButton
+        android:id="@+id/closeButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/cross"
+        android:clickable="true"
+        android:background="@null" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+  </LinearLayout>
+
+  <!-- Camera Preview Section -->
+<!--  <androidx.camera.view.PreviewView-->
+<!--      android:id="@+id/cameraPreview"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="0dp"-->
+<!--      android:background="@color/black"-->
+<!--      app:layout_constraintTop_toBottomOf="@id/topBar"-->
+<!--      app:layout_constraintStart_toStartOf="parent"-->
+<!--      app:layout_constraintEnd_toEndOf="parent"-->
+<!--      app:layout_constraintBottom_toTopOf="@id/bottomPanel"/>-->
+
+  <!-- Bottom Panel -->
+  <LinearLayout
+      android:id="@+id/bottomPanel"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:padding="16dp"
+      app:layout_constraintBottom_toTopOf="@id/endBar"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent">
+
+    <!-- Image Selector -->
+    <ImageView
+        android:id="@+id/imageSelector"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/userimg"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="30dp"/>
+
+    <!-- Capture Button -->
+    <ImageButton
+        android:id="@+id/captureButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/circled"
+        android:src="@drawable/vidcall"
+        android:padding="10dp"/>
+
+    <!-- Switch Camera Button -->
+    <ImageButton
+        android:id="@+id/switchCamera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_switch_camera"
+        android:background="@null"
+        android:layout_marginStart="30dp" />
+  </LinearLayout>
+
+  <!-- Post & Story Options -->
+  <LinearLayout
+      android:id="@+id/endBar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:paddingBottom="16dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent">
+
+    <!-- Post Button -->
+    <TextView
+        android:id="@+id/postButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginEnd="32dp"/>
+
+    <!-- Story Button -->
+    <TextView
+        android:id="@+id/storyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Story"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+  </LinearLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
